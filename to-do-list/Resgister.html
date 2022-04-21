@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head><title>REGISTER FORM</title>
+        <style type="text/css">
+          #button
+              {
+                  cursor: pointer;
+                  background-color: rgb(192, 211, 22);
+                  color: rgb(10, 6, 0);
+                  border-radius: 5px;
+                  font-size:20px;
+                 width:7s0%;
+              }
+.wrapper
+{
+border: 5px solid black;
+background-image:url(register.jpg );
+background-position:cover;
+background-position:center;
+padding: 5px 5px 5px 5px;
+margin:100px 250px 250px 300px;
+width:30%;
+height:250px;
+}
+
+        </style>
+<script src="function.js"></script>
+        </head>
+    <body style="color:white">
+    <div class="wrapper">
+        <center>
+            <h3>REGISTER HERE</h3>
+            <form  method="post" action="login.html" onsubmit="return register()">
+              <table>
+                  <tr>
+                    <td>USER NAME:</td>
+                    <td><input type="text" name="user" placeholder="enter name here" required id="name" ></td>
+                  </tr>
+                  <tr>
+                    <td>PASSWORD:</td>
+                    <td><input type="password" name="password" placeholder="enter password here" required id="pwd"></td>
+                  </tr>
+                  <tr>
+                    <td>EMAIL:</td>
+                    <td><input type="email" name="mail" placeholder="enter mail here" required id="mail"></td>
+                 
+                  </tr>
+                
+                
+                  <tr>
+                    <td><input id="button" type="submit" value="submit" onclick="register()"></td>
+                              </table>
+            </form>
+        </center>
+</div>
+    </body>
+</html>
+    
